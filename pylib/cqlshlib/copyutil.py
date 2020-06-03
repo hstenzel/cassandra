@@ -1871,6 +1871,7 @@ class ImportConversion(object):
             return BlobType(v[2:].decode("hex"))
 
         def convert_text(v, **_):
+            v = v.decode('string_escape')
             return v
 
         def convert_uuid(v, **_):

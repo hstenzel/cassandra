@@ -33,7 +33,7 @@ from util import UTC
 
 is_win = platform.system() == 'Windows'
 
-unicode_controlchars_re = re.compile(r'[\x00-\x31\x7f-\xa0]')
+unicode_controlchars_re = re.compile(r'[\x00-\x31]')
 controlchars_re = re.compile(r'[\x00-\x31\x7f-\xff]')
 
 
